@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>图标切换</title>
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_448304_47new50n1nabgldi.css">
+  <style>
+    .iconfont {
+      color: red;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+    <span class="play-pause"><i class="iconfont icon-pause "></i></span> 
+    <script>
+        $('.play-pause').on('click', function(){
+          var $iconfont =$(this).find('.iconfont') 
+          $iconfont.toggleClass('icon-pause').toggleClass('icon-play')
+        })
+    </script>
+  
+</body>
+</html>
